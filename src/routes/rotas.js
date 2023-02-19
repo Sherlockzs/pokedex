@@ -5,13 +5,11 @@ import { PokeInfo } from '../pages/pokeInfo/pokeInfo.jsx'
 
 export function Rotas() {
     return(
-        <BrowserRouter>
-            <HashRouter>
-                <Routes>
-                    <Route element = { <Home/> } exact path="/home" />
-                    <Route element = { <PokeInfo/> } path="/pokemon" />
-                </Routes>
-            </HashRouter>
-        </BrowserRouter>
+        <HashRouter>
+            <Routes>
+                <Route element = { <Home/> } exact path="/" />
+                <Route element = { <PokeInfo/> } path="/pokemon" />
+            </Routes>
+        </HashRouter>
     )
  }
