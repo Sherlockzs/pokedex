@@ -102,7 +102,6 @@ export function LoadInfo({ClickedPoke, loadedPoke}){
     }
 
     const obj = isValidJson(ClickedPoke)
-    console.log(obj.name);
     if(loadedPoke && !obj){
         return(
             <div className='pokeInfoContainer'>
