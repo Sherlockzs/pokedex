@@ -1,0 +1,50 @@
+.search-bar{
+    border: none;
+    outline: none;
+    line-height: 1.5rem;
+    background: none;
+    width: 15vw;
+    padding-left: 10px;
+    color: white;
+}
+
+.search-icon{
+    color: white;
+    float: right;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+.searchContainer{
+    border-radius: 10px;
+    background-color: rgb(83, 83, 83);
+    display: flex;
+    align-items: center;
+}
+
+.searchBarData{
+    position: absolute;
+    width: 15%;
+    height: 30rem;
+    background-color: rgb(187, 187, 187);
+    color: black;
+    overflow: hidden;
+    overflow-y: scroll;
+    top: 4%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.pokeNames{
+    display: flex;
+    justify-content: center;
+}
+
+.searchBarData::-webkit-scrollbar { 
+    display: none;
+}
+
+.searchHistory{
+    cursor: pointer;
+}

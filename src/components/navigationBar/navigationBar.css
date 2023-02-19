@@ -1,0 +1,24 @@
+.nav{
+    border-bottom: .5px solid rgba(255, 255, 255, 0.25);
+    display: flex;
+}
+
+.nav-container{
+    height: 50px;
+    width: 100%;
+    display: flex;
+}
+
+.middle{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.left{
+    align-items: center;
+}
+
+.left span{
+    margin-left: 10%;
+}

@@ -1,0 +1,94 @@
+.pokeContainer {
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.pokemonsContent{
+    height: calc(100vh - 50px);
+    width: 100%;
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    justify-content: center;
+}
+
+.pokeInfo{
+    min-height: calc(100vh - 53px);
+    background-color: rgb(24, 24, 24);
+    width: 49%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selectPoke{
+    margin-top: 5%;
+    width: 90%;
+    background-color: rgb(29, 29, 29);
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+.pokeInformations{
+    margin-top: 5%;
+    width: 90%;
+    border: 1px solid red;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+.pokes{
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: rgb(75, 75, 75);
+    border: 0.10em solid rgb(0, 0, 0);
+}
+
+.pokes img{
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.selected{
+    background-color: rgb(24, 24, 24)
+}
+
+.pokeInfoContainer{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.lds-hourglass-video:after {
+    position:relative;  
+    z-index: 10;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid #ffffff;
+    border-color: #6d6d6d transparent #b6b6b6 transparent;
+    animation: lds-hourglass-video 1.2s infinite;
+  }
+
+  @keyframes lds-hourglass-video {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

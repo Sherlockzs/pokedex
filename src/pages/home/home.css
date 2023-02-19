@@ -1,0 +1,59 @@
+body{
+  background-color: rgb(29, 29, 29);
+}
+
+.home-container {
+    background-color: rgb(29, 29, 29);
+    min-height: 100vh;
+    height: fit-content;
+}
+
+.pokemon-content{
+    height: calc(100vh - 10%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pokemons{
+    position: relative;
+    min-height: 100vh;
+    background-color: rgb(24, 24, 24);
+    width: 49%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    z-index: 0;
+}
+
+.intersect{
+    position: relative;
+    bottom: 0;
+    z-index: 99;
+}
+
+
+.lds-hourglass-video:after {
+    position:relative;  
+    z-index: 10;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid #ffffff;
+    border-color: #6d6d6d transparent #b6b6b6 transparent;
+    animation: lds-hourglass-video 1.2s infinite;
+  }
+
+  @keyframes lds-hourglass-video {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
