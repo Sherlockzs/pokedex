@@ -7,8 +7,8 @@ export function Rotas() {
     return(
         <BrowserRouter>
                 <Routes>
-                    <Route element = { <Home/> } path="/" />
-                    <Route element = { <PokeInfo/> } path="/pokemon" />
+                    <Route element = { <Home/> } exact path="/"></Route>
+                    <Route element = { <PokeInfo/> } path="/pokemon"></Route>
                 </Routes>
         </BrowserRouter>
     )
