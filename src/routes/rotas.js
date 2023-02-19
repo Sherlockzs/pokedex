@@ -6,12 +6,10 @@ import { PokeInfo } from '../pages/pokeInfo/pokeInfo.jsx'
 export function Rotas() {
     return(
         <BrowserRouter>
-            <HashRouter>
                 <Routes>
                     <Route element = { <Home/> } path="/home" />
                     <Route element = { <PokeInfo/> } path="/pokemon" />
                 </Routes>
-            </HashRouter>
         </BrowserRouter>
     )
  }
