@@ -20,6 +20,7 @@
     background-color: rgb(83, 83, 83);
     display: flex;
     align-items: center;
+    pointer-events: none;
 }
 
 .searchBarData{
@@ -35,14 +36,20 @@
     flex-direction: column;
     display: flex;
     align-items: center;
+    pointer-events: none;
 }
 
 .pokeNames{
     display: flex;
     justify-content: center;
+    pointer-events: none;
 }
 
 .searchBarData::-webkit-scrollbar { 
+    display: none;
+}
+
+.pokeImages{
     display: none;
 }
 

@@ -2,9 +2,12 @@ import './searchBar.css'
 import { AiOutlineSearch } from "react-icons/ai";
 import { useEffect, useState } from "react"
 import axios from "axios"
+import { func } from 'prop-types';
+import { useNavigate } from 'react-router';
 
 
 export function SearchBar({loadingDiv}){
+    const navigate = useNavigate()
     const [details, setDetails] = useState([])
     const [FilteredDetails, setFilteredDetails] = useState([])
 
@@ -20,6 +23,11 @@ export function SearchBar({loadingDiv}){
          }else{
             setFilteredDetails(newFilter)
          }
+    }
+
+    function handleSearch (event) {
+        const pokeNameData = event.target.getAttribute('poke-names')
+        navigate("/pokemon", {state: pokeNameData})
     }
 
     useEffect(() => {
@@ -50,8 +58,8 @@ export function SearchBar({loadingDiv}){
             FilteredDetails.length !== 0 &&(
             <div className="searchBarData">
                 {FilteredDetails.slice(0, 50).map((searchItem) => (
-                    <div key={searchItem.name} className="searchHistory">
-                        <img src={searchItem.image} alt="" />
+                    <div poke-names={searchItem.name} onClick={handleSearch} key={searchItem.name} className="searchHistory">
+                        <img className="pokeImages" src={searchItem.image} alt="" />
                         <div className="pokeNames">{searchItem.name}</div>
                     </div>
                 ))}
