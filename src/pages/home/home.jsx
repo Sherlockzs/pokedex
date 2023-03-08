@@ -19,7 +19,8 @@ export function Home(){
                 setPokeLimit((pokeLimitInsideState) => pokeLimitInsideState + PAGE_NUMBER)
                 setLoading(true)
             }
-        })
+        })  
+        
         intersectObserver.observe(intersectDiv.current);
         return () => intersectObserver.disconnect()
     }, [])
