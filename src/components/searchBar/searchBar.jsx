@@ -26,6 +26,7 @@ export function SearchBar({loadingDiv}){
     }
 
     function handleSearch (event) {
+        
         const pokeNameData = event.target.getAttribute('poke-names')
         navigate("/pokemon", {state: pokeNameData})
     }
@@ -59,8 +60,8 @@ export function SearchBar({loadingDiv}){
             <div className="searchBarData">
                 {FilteredDetails.slice(0, 50).map((searchItem) => (
                     <div poke-names={searchItem.name} onClick={handleSearch} key={searchItem.name} className="searchHistory">
-                        <img className="pokeImages" src={searchItem.image} alt="" />
-                        <div className="pokeNames">{searchItem.name}</div>
+                        <img poke-names={searchItem.name} src={searchItem.image} alt="" />
+                        <div poke-names={searchItem.name} className="pokeNames">{searchItem.name}</div>
                     </div>
                 ))}
             </div>)
